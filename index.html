@@ -2715,6 +2715,12 @@ R
 														display: flex;
 														flex-direction: row;
 													}
+													@media screen and (max-width: 580px) {
+														.twatwa {
+														margin-left: -12rem !important;
+														padding: 0 !important;
+														}
+														}
 												</style>
 													<div class="elementor-widget-container twatwa">
 														<div class="elementor-button-wrapper" style="margin-bottom: 5vh;" >
@@ -3359,8 +3365,23 @@ Both draw from the same template of the 'Expectations vs. Reality' joke, which c
 .retro-paragraph {
     font-size: 16px;
 }
+
+@media screen and (max-width: 580px) {
+
+	.retro-section {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+	height: 100vh; 
+	padding-top: 100vh;
+	padding-bottom: 100vh
+	}
+}
 </style>
-<section style="height: 50vh;" >
+<section  >
 	<div class="retro-section">
         <div class="retro-box">
             <h2 class="retro-title">Decentralized Authenticity</h2>

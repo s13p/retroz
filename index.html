@@ -65,12 +65,12 @@ R
 		.elementor-62 .elementor-element.elementor-element-5a6a9faa:not(.elementor-motion-effects-element-type-background),
 .elementor-62 .elementor-element.elementor-element-5a6a9faa>.elementor-motion-effects-container>.elementor-motion-effects-layer {
    
-    background-image: url("./../../../../x6.jpg");
+    background-image: url("./7-07\ \(1\).png");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-	width: auto;
-    background-position:25% !important;
+    background-size: cover;
+    height: auto;
+	width: 100vw;
+    background-position:center !important;
     
 }
 		}
@@ -3098,7 +3098,7 @@ R
 								<div class="elementor-element elementor-element-3298b329 elementor-widget elementor-widget-heading"
 									data-id="3298b329" data-element_type="widget" data-widget_type="heading.default">
 									<div class="elementor-widget-container">
-										<h2 class="elementor-heading-title elementor-size-default makaka " >Who is 1921 Cartoon?</h2>
+										<h2 class="elementor-heading-title elementor-size-default makaka " >About 1921 Cartoon</h2>
 									</div>
 								</div>
 								<div  class="elementor-element elementor-element-2f302ba1 elementor-widget elementor-widget-text-editor"
@@ -3699,10 +3699,184 @@ Both draw from the same template of the 'Expectations vs. Reality' joke, which c
 										</div>
 									</div>
 								</section>
+							
 							</div>
 						</div>
 					</div>
 				</section>
+				<section>
+					<style>
+						:root {
+  --text-color: #000;
+  --line-color: #000;
+  --icon-color: #000;
+  --icons-alignment: center; /* start, center, end */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: var(--icons-alignment);
+}
+
+.footer-container.fixed {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.footer-content {
+  padding: 0 20px;
+}
+
+.footer-link {
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+  --x: 0;
+  --y: 0;
+}
+
+.footer-link svg {
+  transform: translate3d(var(--x), var(--y), 30px);
+}
+
+.footer-link-text {
+  color: var(--text-color);
+  position: relative;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.footer-link-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease;
+}
+
+.footer-link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--line-color);
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.footer-link:hover:after {
+  transform: scaleX(0);
+}
+
+.footer-link:hover .footer-link-text {
+  opacity: 0;
+}
+
+.footer-link:hover .footer-link-icon {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.footer-link-icon path {
+  fill: var(--icon-color);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-container {
+    height: unset;
+    padding: 40px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: var(--icons-alignment);
+  }
+
+  .footer-item:not(:last-of-type) {
+    margin-right: unset;
+    margin-bottom: 30px;
+  }
+
+  .footer-link {
+    font-size: 30px;
+  }
+}
+
+					</style>
+					<div class="footer-container">
+						<div class="footer-content">
+						  
+						  <div class="footer-item">
+							<a href="#" class="footer-link">
+							  <span class="footer-link-text">TELEGRAM</span>
+							  <span class="footer-link-icon">
+								<img src="./telegram-logo-944.png" alt="">
+							  </span>
+							</a>
+						  </div>
+						  <div class="footer-item">
+							<a href="#" class="footer-link">
+							  <span class="footer-link-text">TWITTER</span>
+							  <span class="footer-link-icon">
+							<img src="./xxxx.png" alt="">
+							  </span>
+							</a>
+						  </div>
+				
+						
+						</div> <!-- end .footer-content -->
+					  </div> <!-- end .footer-container -->
+				</section>
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					const links = document.querySelectorAll('.footer-link');
+					const movementSpeed = 3;
+					
+					const hoverLink = (event) => {
+						let targetNode = event.target;
+
+						const { left, top, width, height } = targetNode.getBoundingClientRect();
+
+						const centerX = left + width / 2;
+						const centerY = top + height / 2;
+						
+						let x = (centerX - event.pageX) / movementSpeed;
+						let y = (centerY - event.pageY) / movementSpeed;
+					
+						targetNode.style.setProperty('--x', `${x}px`);
+						targetNode.style.setProperty('--y', `${y}px`);
+					}
+
+					links.forEach(link => {
+						link.addEventListener('mousemove', hoverLink);
+					});
+				});
+
+			</script>
 			</div>
 			<div class="post-tags">
 			</div>

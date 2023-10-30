@@ -11,11 +11,12 @@
    
     background-image: url("./../../../../x6.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
     background-position: 50% 50%;
     
 }
+
 
 .elementor-62 .elementor-element.elementor-element-5a6a9faa>.elementor-background-overlay {
     background-color: #5cbb5000;
@@ -284,6 +285,7 @@
 
 .elementor-bc-flex-widget .elementor-62 .elementor-element.elementor-element-54105f02.elementor-column .elementor-widget-wrap {
     align-items: center;
+    margin-top: -10rem;
 }
 
 .elementor-62 .elementor-element.elementor-element-54105f02.elementor-column.elementor-element[data-element_type="column"]>.elementor-widget-wrap.elementor-element-populated {
